@@ -1,4 +1,6 @@
-﻿namespace WebStore.Domain.ComplexType
+﻿using WebStore.Domain.Entites;
+
+namespace WebStore.Project.Backend.Domain.ComplexType
 {
     public class Endereco : BaseEntity
     {

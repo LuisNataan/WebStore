@@ -1,4 +1,6 @@
-﻿namespace WebStore.Domain
+﻿using WebStore.Domain.Entites;
+
+namespace WebStore.Project.Backend.Domain.Entites
 {
     public class Fornecedor : BaseEntity
     {

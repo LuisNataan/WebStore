@@ -1,4 +1,4 @@
-﻿namespace WebStore.Domain
+﻿namespace WebStore.Domain.Entites
 {
     public abstract class BaseEntity
     {
