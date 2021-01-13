@@ -6,10 +6,10 @@ namespace WebStore.Project.Backend.Domain.Interfaces
 {
     public interface IGenericRepository<TEntity> where TEntity : BaseEntity
     {
+        Task Create(TEntity entity);
         Task<TEntity> GetById(int id);
-        Task<TEntity> Create(TEntity entity);
-        Task<TEntity> Update(TEntity entity);
-        Task<TEntity> Delete(TEntity entity);
+        Task Update(TEntity entity);
+        Task Delete(TEntity entity);
         Task<IEnumerable<TEntity>> GetAll();
         Task SaveChanges();
     }

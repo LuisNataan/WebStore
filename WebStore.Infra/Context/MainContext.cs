@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using WebStore.Project.Backend.Domain.Entites;
 
 namespace WebStore.Project.Backend.Infra
 {
@@ -29,9 +30,9 @@ namespace WebStore.Project.Backend.Infra
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                    .UseLazyProxy().UseSqlServer("DefaultConnection");
+                    .UseLazyLoadingProxies()
+                    .UseSqlServer("Default Connection");
             }
         }
-
     }
 }
