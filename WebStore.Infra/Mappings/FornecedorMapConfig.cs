@@ -4,7 +4,7 @@ using WebStore.Project.Backend.Domain.Entites;
 
 namespace WebStore.Project.Backend.Infra.Mappings
 {
-    public class FornecedorMapConfiguration : IEntityTypeConfiguration<Fornecedor>
+    public class FornecedorMapConfig : IEntityTypeConfiguration<Fornecedor>
     {
         public void Configure(EntityTypeBuilder<Fornecedor> builder)
         {
